@@ -108,8 +108,11 @@ function compareValue(nilaiDariGenap, nilaiDariGanjil) {
         return "nilai dari ganjil lebih besar";
     }
 }
-
 // - Min lebih besar array genap
+console.log("perbandingan minimal value: ", compareValue(minValueGenap, minValueGanjil))
 // - Max lebih besar array ganjil
+console.log("perbandingan maximal value: ", compareValue(maxValueGenap, maxValueGanjil))
 // - Total memiliki nilai sama antara array genap dan ganjil
+console.log("perbandingan total value: ", compareValue(totalValueGenap, totalValueGanjil))
 // - Rata rata lebih besar array ganjil
+console.log("perbandingan rata-rata value: ", compareValue(averageValueGenap, averageValueGanjil))
