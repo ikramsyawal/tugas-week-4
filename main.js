@@ -26,3 +26,22 @@ console.log("panjang array indeks ganjil: ", ganjilArray.length)
 
 console.log("array indeks genap: ", genapArray)
 console.log("panjang array indeks genap: ", genapArray.length)
+
+// - Gunakan 2 array yang telah dibuat untuk mendapatkan
+// - Min
+function minimalValue(array) {
+    let min = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < min) {
+            min = array[i];
+        }
+    }
+    return min;
+}
+
+console.log("minimal value dari array ganjil: ", minimalValue(ganjilArray))
+console.log("minimal value dari array ganjil: ", minimalValue(genapArray))
+
+// - Max
+// - Total
+// - Rata rata
