@@ -3,6 +3,16 @@ const randomArray = [];
 const genapArray = [];
 const ganjilArray = [];
 
+// variabel untuk menampung hasil dari function min,max,total,average
+let minValueGanjil;
+let minValueGenap;
+let maxValueGanjil;
+let maxValueGenap;
+let totalValueGanjil;
+let totalValueGenap;
+let averageValueGanjil;
+let averageValueGenap;
+
 for (let i = 0; i < 100; i++) {
     let number = Math.floor(Math.random() * 50) + 1;
     randomArray.push(number);
@@ -39,6 +49,8 @@ function minimalValue(array) {
     return min;
 }
 
+minValueGanjil = minimalValue(ganjilArray)
+minValueGenap = minimalValue(genapArray)
 console.log("minimal value dari array ganjil: ", minimalValue(ganjilArray))
 console.log("minimal value dari array genap: ", minimalValue(genapArray))
 
@@ -52,6 +64,9 @@ function maximalValue(array) {
     }
     return max;
 }
+
+maxValueGanjil = maximalValue(ganjilArray)
+maxValueGenap = maximalValue(genapArray)
 console.log("maximal value dari array ganjil: ", maximalValue(ganjilArray))
 console.log("maximal value dari array genap: ", maximalValue(genapArray))
 
@@ -63,6 +78,9 @@ function totalValue(array) {
     }
     return total;
 }
+
+totalValueGanjil = totalValue(ganjilArray)
+totalValueGenap = totalValue(genapArray)
 console.log("total value dari array ganjil: ", totalValue(ganjilArray))
 console.log("total value dari array genap: ", totalValue(genapArray))
 
@@ -74,15 +92,13 @@ function averageValue(array) {
     }
     return total / array.length;
 }
+
+averageValueGanjil = averageValue(ganjilArray)
+averageValueGenap = averageValue(genapArray)
 console.log("rata-rata value dari array ganjil: ", averageValue(ganjilArray))
 console.log("rata-rata value dari array genap: ", averageValue(genapArray))
 
 // - Bandingkan kedua buah array, contoh
-// - Min lebih besar array genap
-// - Max lebih besar array ganjil
-// - Total memiliki nilai sama antara array genap dan ganjil
-// - Rata rata lebih besar array ganjil
-
 function compareValue(nilaiDariGenap, nilaiDariGanjil) {
     if (nilaiDariGenap === nilaiDariGanjil) {
         return "kedua nilai sama";
@@ -92,3 +108,8 @@ function compareValue(nilaiDariGenap, nilaiDariGanjil) {
         return "nilai dari ganjil lebih besar";
     }
 }
+
+// - Min lebih besar array genap
+// - Max lebih besar array ganjil
+// - Total memiliki nilai sama antara array genap dan ganjil
+// - Rata rata lebih besar array ganjil
