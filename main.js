@@ -40,8 +40,29 @@ function minimalValue(array) {
 }
 
 console.log("minimal value dari array ganjil: ", minimalValue(ganjilArray))
-console.log("minimal value dari array ganjil: ", minimalValue(genapArray))
+console.log("minimal value dari array genap: ", minimalValue(genapArray))
 
 // - Max
+function maximalValue(array) {
+    let max = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    return max;
+}
+console.log("maximal value dari array ganjil: ", maximalValue(ganjilArray))
+console.log("maximal value dari array genap: ", maximalValue(genapArray))
+
 // - Total
+function totalValue(array) {
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total;
+}
+console.log("total value dari array ganjil: ", totalValue(ganjilArray))
+console.log("total value dari array genap: ", totalValue(genapArray))
 // - Rata rata
