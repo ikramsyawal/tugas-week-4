@@ -65,4 +65,14 @@ function totalValue(array) {
 }
 console.log("total value dari array ganjil: ", totalValue(ganjilArray))
 console.log("total value dari array genap: ", totalValue(genapArray))
+
 // - Rata rata
+function averageValue(array) {
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total / array.length;
+}
+console.log("rata-rata value dari array ganjil: ", averageValue(ganjilArray))
+console.log("rata-rata value dari array genap: ", averageValue(genapArray))
