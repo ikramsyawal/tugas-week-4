@@ -76,3 +76,19 @@ function averageValue(array) {
 }
 console.log("rata-rata value dari array ganjil: ", averageValue(ganjilArray))
 console.log("rata-rata value dari array genap: ", averageValue(genapArray))
+
+// - Bandingkan kedua buah array, contoh
+// - Min lebih besar array genap
+// - Max lebih besar array ganjil
+// - Total memiliki nilai sama antara array genap dan ganjil
+// - Rata rata lebih besar array ganjil
+
+function compareValue(nilaiDariGenap, nilaiDariGanjil) {
+    if (nilaiDariGenap === nilaiDariGanjil) {
+        return "kedua nilai sama";
+    } else if (nilaiDariGenap > nilaiDariGanjil) {
+        return "nilai dari genap lebih besar";
+    } else {
+        return "nilai dari ganjil lebih besar";
+    }
+}
